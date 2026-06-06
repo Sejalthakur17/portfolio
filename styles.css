@@ -353,6 +353,31 @@ body {
     padding: 4px 0;
 }
 
+/* Soft Skills */
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.soft-skill-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.soft-skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
 /* Experience Timeline */
 .timeline {
     max-width: 800px;
@@ -679,6 +704,10 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .soft-skills-grid {
+    grid-template-columns: 1fr;
+    }
+
     .timeline::before {
         left: 6px;
     }
