@@ -577,8 +577,8 @@ body {
 
 /* Profile Photo */
 .profile-photo {
-    width: 320px;
-    height: 320px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #6366f1;
