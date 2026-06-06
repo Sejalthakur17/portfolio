@@ -740,3 +740,14 @@ body {
     font-weight: 500;
     margin-bottom: 16px;
 }
+
+.cert-card {
+    text-decoration: none;
+    display: block;
+}
+.cert-verify {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--accent);
+}
