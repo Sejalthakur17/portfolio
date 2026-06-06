@@ -80,3 +80,20 @@ terminalLines.forEach((line, index) => {
     }, delay);
     delay += 400;
 });
+
+const roles = ["Cloud Engineer", "DevOps Engineer", "Infrastructure Automation", "CI/CD Specialist"];
+let roleIndex = 0, charIndex = 0, deleting = false;
+
+function type() {
+    const current = roles[roleIndex];
+    const el = document.getElementById("typed-text");
+    if (!deleting) {
+        el.textContent = current.slice(0, charIndex++);
+        if (charIndex > current.length) { deleting = true; setTimeout(type, 1500); return; }
+    } else {
+        el.textContent = current.slice(0, charIndex--);
+        if (charIndex < 0) { deleting = false; roleIndex = (roleIndex + 1) % roles.length; }
+    }
+    setTimeout(type, deleting ? 60 : 100);
+}
+type();
