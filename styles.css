@@ -459,7 +459,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+}
+
+.project-link {
+    color: #7c3aed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link svg {
+    width: 22px;
+    height: 22px;
+}
+
+.project-link:hover {
+    transform: scale(1.1);
 }
 
 .project-icon {
