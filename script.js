@@ -81,7 +81,7 @@ terminalLines.forEach((line, index) => {
     delay += 400;
 });
 
-const roles = ["Cloud Engineer", "DevOps Engineer", "Infrastructure Automation", "CI/CD Specialist"];
+const roles = ["Cloud Engineer", "DevOps Engineer", "Infrastructure Automation", "CI/CD Specialist", "Site Reliability Engineer"];
 let roleIndex = 0, charIndex = 0, deleting = false;
 
 function type() {
