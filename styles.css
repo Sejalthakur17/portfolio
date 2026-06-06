@@ -299,6 +299,7 @@ body {
     justify-content: center;
     gap: 40px;
     margin-top: 32px;
+    flex-wrap: nowrap;
 }
 
 .detail {
@@ -310,6 +311,10 @@ body {
 
 .detail .icon {
     font-size: 1.2rem;
+}
+
+.detail span:last-child {
+    white-space: nowrap;
 }
 
 /* Skills */
