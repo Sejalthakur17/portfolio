@@ -38,7 +38,7 @@
                 <p class="greeting">Hi, I'm</p>
                 <h1>Sejal Thakur</h1>
                 <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
-                <p class="tagline">Building scalable infrastructure with AWS, Terraform, Docker & CI/CD pipelines.</p>
+                <p class="tagline">Building scalable infrastructure & securing cloud environments · AWS · Terraform · Docker · CI/CD · DevSecOps · SOC</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Get in Touch</a>
@@ -75,9 +75,9 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <p>I'm a Cloud/DevOps Engineer with hands-on experience in <strong>AWS</strong>, <strong>Azure</strong>, <strong>Terraform</strong>, <strong>Docker</strong>, <strong>Ansible</strong>, <strong>Prometheus</strong>, and <strong>Grafana</strong> through internships and project assessments.</p>
-                <p>I'm proficient in CI/CD pipelines, infrastructure automation, containerization, and cloud monitoring with a focus on scalable and reliable DevOps practices.</p>
-                <div class="about-details">
+                <p>I'm a Cloud/DevOps & Security Engineer with hands-on experience in <strong>AWS</strong>, <strong>Terraform</strong>, <strong>Docker</strong>, <strong>Ansible</strong>, <strong>Prometheus</strong>, and <strong>Grafana</strong> through internships and project assessments. Currently expanding into <strong>Cloud Security</strong>, <strong>DevSecOps</strong>, and <strong>SOC operations</strong>.</p>
+                <p>Proficient in CI/CD pipelines, infrastructure automation, containerization, cloud monitoring, SIEM, vulnerability scanning, and incident response — with a focus on building secure and scalable cloud environments.</p>
+
                     <div class="detail">
                         <span class="icon">📍</span>
                         <span>Mohali, Punjab, India</span>
@@ -326,6 +326,76 @@
                         <span>Grafana</span>
                     </div>
                 </article>
+        <section id="security-projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Cybersecurity Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🛡️</span>
+                    </div>
+                    <h3>SOC Home Lab — Wazuh SIEM on AWS EC2</h3>
+                    <p>Deployed Wazuh open-source SIEM on EC2 via Ansible; wrote 3 custom detection rules (failed SSH x5, root login, suspicious cron); built security events dashboard.</p>
+                    <div class="tech-tags">
+                        <span>Wazuh</span>
+                        <span>AWS EC2</span>
+                        <span>Ansible</span>
+                        <span>SIEM</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🔒</span>
+                    </div>
+                    <h3>DevSecOps Secure CI/CD Pipeline</h3>
+                    <p>Added Checkov, Semgrep, Trivy, and GitLeaks as security gate stages to Jenkins and GitHub Actions — pipeline fails build on HIGH severity findings before Terraform apply.</p>
+                    <div class="tech-tags">
+                        <span>Jenkins</span>
+                        <span>GitHub Actions</span>
+                        <span>Trivy</span>
+                        <span>Semgrep</span>
+                        <span>GitLeaks</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🔍</span>
+                    </div>
+                    <h3>Secure IaC Audit — Terraform Security Findings</h3>
+                    <p>Ran Checkov and tfsec on blue-green/multi-env Terraform codebases; remediated IAM over-privilege, open SGs, disabled CloudTrail; produced professional findings report with NIST CSF mapping.</p>
+                    <div class="tech-tags">
+                        <span>Checkov</span>
+                        <span>tfsec</span>
+                        <span>Terraform</span>
+                        <span>NIST CSF</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">☁️</span>
+                    </div>
+                    <h3>CloudGoat — AWS Attack Simulation & GRC Defence</h3>
+                    <p>Completed 2 CloudGoat scenarios (IAM privilege escalation, S3 breach to EC2 metadata); mapped attack paths to NIST CSF controls and authored GRC remediation recommendations.</p>
+                    <div class="tech-tags">
+                        <span>CloudGoat</span>
+                        <span>AWS IAM</span>
+                        <span>NIST CSF</span>
+                        <span>GRC</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">📋</span>
+                    </div>
+                    <h3>Incident Response Playbook — AWS S3 Bucket Exposure</h3>
+                    <p>Authored a professional NIST SP 800-61r2 IR playbook: Detect → Assess → Contain → Notify → Remediate → Document with exact AWS CLI commands and NIST CSF control mapping.</p>
+                    <div class="tech-tags">
+                        <span>NIST SP 800-61r2</span>
+                        <span>AWS S3</span>
+                        <span>NIST CSF</span>
+                        <span>GRC</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -362,6 +432,23 @@
                         <span class="cert-verify">Verify ↗</span>
                     </a>
                 </div>
+                <div class="cert-card">
+                    <span class="cert-icon">🏅</span>
+                    <h4>HTB Academy — Linux Fundamentals</h4>
+                    <span class="cert-verify">Jul 2026</span>
+                </div>
+                <div class="cert-card">
+                    <a href="https://coursera.org/verify/professional-cert/WUOPOQRCHNDC" target="_blank" rel="noopener" class="cert-card">
+                    <span class="cert-icon">🏅</span>
+                    <h4>Google Cybersecurity Professional</h4>
+                    <span class="cert-verify">9 Courses · Jul 2026 ↗</span>
+                    </a>
+                </div> 
+                <a href="https://www.netacad.com/certificates?issuanceId=60c0c292-304e-4fdd-aa14-eaed5fed3ae5" target="_blank" rel="noopener" class="cert-card">
+                    <span class="cert-icon">🏅</span>
+                    <h4>Cisco — Introduction to Cybersecurity</h4>
+                    <span class="cert-verify">Jul 2026 ↗</span>
+                </a>
             </div>
         </div>
     </section>
